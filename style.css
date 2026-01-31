@@ -1,0 +1,106 @@
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #f4c10f;
+}
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.bg1 {
+  background-image: url("images/bg1.jpg");
+}
+
+.bg2 {
+  background-image: url("images/bg2.jpg");
+}
+
+.bg3 {
+  background-image: url("images/bg3.jpg");
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+}
+
+.content {
+  padding: 80px 40px;
+  background: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .caption h1 {
+    font-size: 24px;
+  }
+
+  .content {
+    padding: 60px 20px;
+  }
+}
