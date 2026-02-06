@@ -2,111 +2,136 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Parallax Website Clone</title>
+  <title>Parallax Web Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
- 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<header>
+  <nav class="navbar">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#gallery">WORK</a>
+    <a href="#media">MEDIA</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
 
-  <header>
-    <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#media">Media</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<main>
 
-  <main>
 
-  
-    <section id="home" class="parallax bg1">
-      <div class="caption">
-        <h1>PARALLAX WEBSITE</h1>
-        <p>Scroll to experience the effect</p>
+  <section id="home" class="parallax bg1">
+    <div class="caption">
+      <span class="border">MY WEBSITE</span>
+      <p>Scrolling Web Design Project</p>
+    </div>
+  </section>
+
+
+  <section id="about" class="content">
+    <h2>ABOUT ME</h2>
+    <p>
+      I am a student learning front-end web development.
+      This website was created as part of my academic project
+      to practice layout design, scrolling effects, and responsive styling.
+    </p>
+
+    <div class="about-grid">
+      <img src="profile.jpg" alt="Profile Image">
+
+      <div>
+        <p>
+          I enjoy building simple and clean websites inspired by modern web templates.
+          This project shows how HTML and CSS work together to create visual designs.
+        </p>
+
+        <p><strong>Skills</strong></p>
+
+        <p>HTML & CSS</p>
+        <div class="skill-bar"><div class="skill html"></div></div>
+
+        <p>Web Design</p>
+        <div class="skill-bar"><div class="skill design"></div></div>
+
+        <p>Layout & Styling</p>
+        <div class="skill-bar"><div class="skill layout"></div></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    
-    <section id="about" class="content">
-      <h2>About This Project</h2>
-      <p>
-        This website is a clone of the W3Schools Parallax Template. It demonstrates
-        advanced CSS styling techniques such as fixed background images, responsive
-        layouts, and a single-page scrolling design.
-      </p>
-    </section>
+  <section class="parallax bg2">
+    <div class="caption">
+      <span class="border">MY WORK</span>
+    </div>
+  </section>
 
-    <section class="parallax bg2">
-      <div class="caption">
-        <h2>CREATIVE DESIGN</h2>
-      </div>
-    </section>
+  <section id="gallery" class="content">
+    <h2>PORTFOLIO</h2>
+    <p>
+      Below are sample images representing my work and practice projects.
+      Click to view them clearly.
+    </p>
 
-  
-    <section id="gallery" class="content">
-      <h2>Gallery</h2>
-      <p>Below is a sample table used to demonstrate HTML table elements.</p>
+    <div class="gallery-grid">
+      <img src="work1.jpg" alt="Web Design Mockup">
+      <img src="work2.jpg" alt="Frontend Development">
+      <img src="work3.webp" alt="Website UI">
+      <img src="work4.webp" alt="Mobile App UI">
+    </div>
+  </section>
 
-      <table>
-        <tr>
-          <th>Project</th>
-          <th>Type</th>
-          <th>Year</th>
-        </tr>
-        <tr>
-          <td>Parallax Clone</td>
-          <td>Web Design</td>
-          <td>2026</td>
-        </tr>
-      </table>
-    </section>
+  <section class="parallax bg3">
+    <div class="caption">
+      <span class="border">MEDIA</span>
+    </div>
+  </section>
 
-    <section class="parallax bg3">
-      <div class="caption">
-        <h2>RESPONSIVE & MODERN</h2>
-      </div>
-    </section>
+  <section id="media" class="content">
+    <h2>PROJECT DEMONSTRATION</h2>
+    <p>
+      This video demonstrates how the website looks and behaves
+      while scrolling through different sections.
+    </p>
 
-    <section id="media" class="content">
-      <h2>Project Video</h2>
+    <video controls width="100%">
+      <source src="projectv.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
-      <video controls width="100%">
-        <source src="media/demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
+  <section id="contact" class="content">
+    <h2>CONTACT</h2>
+    <p><i class="fa fa-map-marker"></i> Kigali, Rwanda</p>
 
-  
-    <section id="contact" class="content">
-      <h2>Contact</h2>
-      <p><i class="fa-solid fa-location-dot"></i> Kigali, Rwanda</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button type="submit">SEND MESSAGE</button>
+    </form>
 
-      <iframe
-        src="https://www.google.com/maps?q=Kigali,Rwanda&output=embed"
-        width="100%"
-        height="300"
-        style="border:0;"
-        loading="lazy">
-      </iframe>
-    </section>
+    <iframe
+      src="https://www.google.com/maps?q=Kigali,Rwanda&output=embed"
+      width="100%"
+      height="300"
+      style="border:0;"
+      loading="lazy">
+    </iframe>
+  </section>
 
-  </main>
+</main>
 
-  <footer>
-    <p>&copy; 2026 Parallax Website Clone</p>
-  </footer>
+<footer>
+  <p>&copy; 2026 Parallax Web Project</p>
+</footer>
 
 </body>
 </html>
