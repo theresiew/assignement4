@@ -2,136 +2,279 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Parallax Web Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
- 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta
+    name="description"
+    content="A responsive single-page parallax travel website inspired by the W3Schools Parallax template."
+  >
+  <title>Discover Kigali | Parallax Website Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&family=Oswald:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#about">Skip to main content</a>
 
-<header>
-  <nav class="navbar">
-    <a href="#home">HOME</a>
-    <a href="#about">ABOUT</a>
-    <a href="#gallery">WORK</a>
-    <a href="#media">MEDIA</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
-</header>
+  <header id="home" class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a class="brand" href="#home">Discover Kigali</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-
-
-  <section id="home" class="parallax bg1">
-    <div class="caption">
-      <span class="border">MY WEBSITE</span>
-      <p>Scrolling Web Design Project</p>
-    </div>
-  </section>
-
-
-  <section id="about" class="content">
-    <h2>ABOUT ME</h2>
-    <p>
-      I am a student learning front-end web development.
-      This website was created as part of my academic project
-      to practice layout design, scrolling effects, and responsive styling.
-    </p>
-
-    <div class="about-grid">
-      <img src="profile.jpg" alt="Profile Image">
-
-      <div>
-        <p>
-          I enjoy building simple and clean websites inspired by modern web templates.
-          This project shows how HTML and CSS work together to create visual designs.
+  <main>
+    <section class="parallax hero bg1" aria-label="Welcome banner">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">W3Schools Parallax Clone</p>
+        <h1>Discover Kigali Through Motion, Culture, and Design</h1>
+        <p class="hero-text">
+          This single-page website recreates the parallax scrolling layout while
+          showcasing Kigali as a calm, modern, and inspiring destination.
         </p>
-
-        <p><strong>Skills</strong></p>
-
-        <p>HTML & CSS</p>
-        <div class="skill-bar"><div class="skill html"></div></div>
-
-        <p>Web Design</p>
-        <div class="skill-bar"><div class="skill design"></div></div>
-
-        <p>Layout & Styling</p>
-        <div class="skill-bar"><div class="skill layout"></div></div>
+        <a class="hero-button" href="#about">Start Exploring</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="parallax bg2">
-    <div class="caption">
-      <span class="border">MY WORK</span>
-    </div>
-  </section>
+    <section id="about" class="content-section section-light">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark">About The Experience</p>
+        <h2>A Responsive Travel Story Built With Semantic HTML And CSS</h2>
+      </div>
 
-  <section id="gallery" class="content">
-    <h2>PORTFOLIO</h2>
-    <p>
-      Below are sample images representing my work and practice projects.
-      Click to view them clearly.
-    </p>
+      <div class="about-grid">
+        <figure class="profile-card">
+          <img src="profile.jpg" alt="Local guide welcoming visitors to Kigali">
+          <figcaption>Your guide to the city highlights</figcaption>
+        </figure>
 
-    <div class="gallery-grid">
-      <img src="work1.jpg" alt="Web Design Mockup">
-      <img src="work2.jpg" alt="Frontend Development">
-      <img src="work3.webp" alt="Website UI">
-      <img src="work4.webp" alt="Mobile App UI">
-    </div>
-  </section>
+        <div class="about-copy">
+          <p>
+            The layout follows the same single-page rhythm as the W3Schools
+            template: immersive parallax image panels separated by readable
+            content sections. The goal is visual precision, smooth scrolling,
+            and strong semantic structure.
+          </p>
+          <p>
+            Kigali was chosen as the theme because it blends clean urban design,
+            creative energy, and scenic views. The page is also fully responsive,
+            so the design adapts well from large screens down to mobile phones.
+          </p>
 
-  <section class="parallax bg3">
-    <div class="caption">
-      <span class="border">MEDIA</span>
-    </div>
-  </section>
+          <h3>What Visitors Can Expect</h3>
+          <ul class="feature-list">
+            <li>Wide hilltop viewpoints and quiet sunrise moments</li>
+            <li>Creative spaces, local markets, and community-centered culture</li>
+            <li>Simple navigation with anchor links to every major section</li>
+          </ul>
 
-  <section id="media" class="content">
-    <h2>PROJECT DEMONSTRATION</h2>
-    <p>
-      This video demonstrates how the website looks and behaves
-      while scrolling through different sections.
-    </p>
+          <div class="skills-panel" aria-label="Project strengths">
+            <div class="skill-row">
+              <span>Semantic HTML Structure</span>
+              <div class="skill-bar"><span class="skill-fill fill-html"></span></div>
+            </div>
+            <div class="skill-row">
+              <span>Parallax Styling</span>
+              <div class="skill-bar"><span class="skill-fill fill-css"></span></div>
+            </div>
+            <div class="skill-row">
+              <span>Responsive Design</span>
+              <div class="skill-bar"><span class="skill-fill fill-responsive"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <video controls width="100%">
-      <source src="video2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
+    <section class="parallax banner bg2" aria-label="Gallery banner">
+      <div class="overlay overlay-soft"></div>
+      <div class="banner-caption">
+        <span>City Views</span>
+      </div>
+    </section>
 
-  <section id="contact" class="content">
-    <h2>CONTACT</h2>
-    <p><i class="fa fa-map-marker"></i> Kigali, Rwanda</p>
+    <section id="gallery" class="content-section section-dark">
+      <div class="section-heading">
+        <p class="eyebrow">Gallery</p>
+        <h2>Moments That Shape The Kigali Experience</h2>
+      </div>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <textarea rows="4" placeholder="Message"></textarea>
-      <button type="submit">SEND MESSAGE</button>
-    </form>
+      <p class="section-intro">
+        These featured images act like a mini portfolio and reflect the same
+        image-focused layout used in the original template. Each card includes a
+        short caption to keep the section meaningful and accessible.
+      </p>
 
-    <iframe
-      src="https://www.google.com/maps?q=Kigali,Rwanda&output=embed"
-      width="100%"
-      height="300"
-      style="border:0;"
-      loading="lazy">
-    </iframe>
-  </section>
+      <div class="gallery-grid">
+        <figure class="gallery-card">
+          <img src="work1.jpg" alt="Clean architecture and outdoor social space">
+          <figcaption>Modern spaces designed for people to gather and connect.</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="work2.jpg" alt="Creative digital work inspired by local innovation">
+          <figcaption>Innovation hubs continue to shape a forward-looking city.</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="work3.webp" alt="Stylish interior with a calm visual atmosphere">
+          <figcaption>Design-led environments bring a sense of ease and focus.</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="work4.webp" alt="Travel-friendly mobile experiences and navigation">
+          <figcaption>Mobile-first planning helps travelers explore with confidence.</figcaption>
+        </figure>
+      </div>
 
-</main>
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Suggested Day Plan</h3>
+          <table class="info-table">
+            <caption>One-day sample itinerary</caption>
+            <thead>
+              <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08:00</td>
+                <td>Breakfast with a hilltop city view</td>
+              </tr>
+              <tr>
+                <td>11:00</td>
+                <td>Gallery and market exploration</td>
+              </tr>
+              <tr>
+                <td>15:00</td>
+                <td>Creative district walk and coffee stop</td>
+              </tr>
+              <tr>
+                <td>18:30</td>
+                <td>Sunset photography and dinner</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
 
-<footer>
-  <p>&copy; 2026 Parallax Web Project</p>
-</footer>
+        <article class="info-card">
+          <h3>Quick Facts</h3>
+          <ul class="facts-list">
+            <li><i class="fa-solid fa-mountain-city"></i> Scenic hills create layered city views.</li>
+            <li><i class="fa-solid fa-camera-retro"></i> Golden hour works beautifully with parallax imagery.</li>
+            <li><i class="fa-solid fa-route"></i> Single-page navigation keeps the user journey simple.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
+    <section class="parallax banner bg3" aria-label="Media banner">
+      <div class="overlay"></div>
+      <div class="banner-caption">
+        <span>Media And Contact</span>
+      </div>
+    </section>
+
+    <section id="media" class="content-section section-light">
+      <div class="section-heading">
+        <p class="eyebrow eyebrow-dark">Media</p>
+        <h2>Video And Audio Bring The Story To Life</h2>
+      </div>
+
+      <div class="media-grid">
+        <article class="media-card">
+          <h3>Short Video Tour</h3>
+          <p>
+            This embedded project video gives the page a second multimedia
+            element and demonstrates the assignment requirement beyond static
+            imagery.
+          </p>
+          <video controls preload="metadata" poster="bg1.jpg">
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </article>
+
+        <article class="media-card">
+          <h3>Ambient Audio Clip</h3>
+          <p>
+            A short local audio file adds another HTML media element and helps
+            round out the single-page experience.
+          </p>
+          <audio controls>
+            <source src="city-ambience.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+          <div class="media-note">
+            <i class="fa-solid fa-headphones"></i>
+            <span>Best experienced with headphones or speakers.</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section section-accent">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Plan A Visit And Explore The Map</h2>
+      </div>
+
+      <div class="contact-grid">
+        <article class="contact-card">
+          <h3>Reach Out</h3>
+          <p>
+            This section keeps the original template spirit with simple contact
+            details, a clean form, and a Google Map iframe for location context.
+          </p>
+          <div class="contact-details">
+            <p><i class="fa-solid fa-location-dot"></i> Kigali, Rwanda</p>
+            <p><i class="fa-solid fa-phone"></i> +250 700 000 000</p>
+            <p><i class="fa-solid fa-envelope"></i> hello@discoverkigali.com</p>
+          </div>
+
+          <form class="contact-form">
+            <label class="sr-only" for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" required>
+
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" placeholder="Your email" required>
+
+            <label class="sr-only" for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us what you want to explore"></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </article>
+
+        <article class="contact-card">
+          <h3>Find Kigali On The Map</h3>
+          <iframe
+            title="Map of Kigali, Rwanda"
+            src="https://www.google.com/maps?q=Kigali,Rwanda&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Parallax Website Clone for Advanced CSS and Semantic HTML Assignment</p>
+    <a href="#home">Back to top</a>
+  </footer>
 </body>
 </html>
