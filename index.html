@@ -26,7 +26,18 @@
   <header id="home" class="site-header">
     <nav class="navbar" aria-label="Primary">
       <a class="brand" href="#home">Discover Kigali</a>
-      <ul class="nav-links">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-menu"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="primary-menu" class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
@@ -276,5 +287,6 @@
     <p>Parallax Website Clone for Advanced CSS and Semantic HTML Assignment</p>
     <a href="#home">Back to top</a>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
